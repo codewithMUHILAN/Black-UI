@@ -23,9 +23,9 @@
   </p>
   
   <br />
-  <p align="center">
+  <!-- <p align="center">
     <img src="https://i.ibb.co/CtFSK18/blackui-components-display.png" alt="Black UI Components" width="90%" />
-  </p>
+  </p> -->
 </div>
 
 <hr />
