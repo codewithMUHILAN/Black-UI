@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://i.ibb.co/jJKqgQC/blackui-logo-dark.png" alt="Black UI Logo" width="180" />
+  <img src="http://codewithmuhilan.com/extra-Assets/blackuilogo.png" alt="Black UI Logo" width="180" />
   
   <h1 align="center">Black UI</h1>
   
@@ -8,18 +8,18 @@
   </p>
   
   <p align="center">
-    <a href="https://github.com/blackui/blackui/stargazers">
+    <a href="https://github.com/codewithMUHILAN/black-ui/stargazers">
       <img src="https://img.shields.io/github/stars/blackui/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="GitHub Stars" />
     </a>
     <a href="https://www.npmjs.com/package/blackui">
       <img src="https://img.shields.io/npm/v/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="NPM Version" />
     </a>
-    <a href="https://github.com/blackui/blackui/blob/main/LICENSE">
+    <a href="https://github.com/codewithMUHILAN/black-ui/blob/main/README.md">
       <img src="https://img.shields.io/github/license/blackui/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="License" />
     </a>
-    <a href="https://blackui.com/discord">
+    <!-- <a href="https://blackui.com/discord">
       <img src="https://img.shields.io/discord/1234567890?style=flat-square&labelColor=000000&color=4d4d4d&label=discord" alt="Discord" />
-    </a>
+    </a> -->
   </p>
   
   <br />
@@ -41,6 +41,11 @@ yarn add blackui
 
 # Using pnpm
 pnpm add blackui
+```
+
+```bash
+# Create blackui folder in your project
+npx create-blackui
 ```
 
 ## 🔧 Requirements
@@ -85,53 +90,71 @@ Black UI includes a comprehensive set of components:
 
 ### Layout & Structure
 - **Accordion** — Collapsible content panels
-- **AspectRatio** — Maintain proportional dimensions
-- **Card** — Versatile content containers
-- **Resizable** — User-adjustable panels
-- **ScrollArea** — Custom scrollable containers
-- **Separator** — Visual dividers with various styles
-- **Table** — Data-rich displays with sorting and filtering
-
-### Inputs & Forms
-- **Button** — Multiple variants and sizes
-- **Checkbox** — Customizable selection controls
-- **Input** — Text entry with validations
-- **InputOTP** — One-time password inputs
-- **Label** — Accessible form labels
-- **RadioGroup** — Option selection controls
-- **Slider** — Range selection with visual feedback
-- **Switch** — Toggle controls with animated states
-- **Textarea** — Multi-line text input
-
-### Navigation
-- **Breadcrumb** — Hierarchical page navigation
-- **DynamicNavigation** — Context-aware navigation systems
-- **Pagination** — Multi-page content navigation
-- **Sidebar** — Collapsible application navigation
-- **Tabs** — Content organization and switching
-
-### Feedback & Status
-- **Alert** — Contextual messages with various severities
-- **Progress** — Visual indicators for processes
-- **Skeleton** — Loading state placeholders
-- **Toast** — Temporary notifications with auto-dismiss
-
-### Overlay & Popups
-- **AlertDialog** — Confirmation dialogues
-- **Dialog** — Modal content containers
-- **Drawer** — Side-emerging panels
-- **Popover** — Contextual floating content
-- **Tooltip** — Information on hover
-
-### Advanced Components
-- **AnimatedBlobBackground** — Engaging visual effects
-- **Avatar** — User representations with fallbacks
-- **BorderBeam** — Animated border highlights
-- **Carousel** — Scrollable content showcase
-- **Dock** — macOS-style application launchers
-- **InteractiveGradient** — Responsive color effects
-- **SeasonalHoverCards** — Context-sensitive information cards
-- **SmokyCursor** — Engaging cursor trails and effects
+-**Seasonal Hover Cards**-
+-**Interactive Card Gallery**-
+-**Aurora Text**-
+-**Confetti Button**-
+-**Smokey Cursor**-
+-**Scroll Timeline**-
+-**Interactive Gradient Card**-
+-**Dynamic Navigation**-
+-**Gradient Button**-
+-**Count Up**-
+-**Password Strength Indicator**-
+-**Border Beam**-
+-**Animated Background**-
+-**Alert**-
+-**Alert Dialog**-
+-**Avatar**-
+-**Badge**-
+-**Button**-
+-**Card**-
+-**Carousel**-
+-**Chart**-
+-**Collapsible**-
+-**Confetti Button**-
+-**Context Menu**-
+-**Dialog**-
+-**Drawer**-
+-**Dropdown Menu**-
+-**Hover Card**-
+-**Popover**-
+-**Progress**-
+-**Sheet**-
+-**Skeleton**-
+-**Table**-
+-**Toast**-
+-**Tooltip**-
+-**Top Loader**-
+-**Form Controls**-
+-**Calendar**-
+-**Checkbox**-
+-**Command**-
+-**Form**-
+-**Input**-
+-**Input OTP**-
+-**Label**-
+-**Radio Group**-
+-**Select**-
+-**Slider**-
+-**Switch**-
+-**Textarea**-
+-**Toggle**-
+-**Toggle Group**-
+-**Accordion**-
+-**Aspect Ratio**-
+-**Resizable**-
+-**Resizable**-
+-**Scroll Area**-
+-**Separator**-
+-**Tabs**-
+-**Breadcrumb**-
+-**Command**-
+-**Dock**-
+-**Menubar**-
+-**Navigation Menu**-
+-**Pagination**-
+-**Sidebar**-
 
 ## 🎭 Advanced Animations
 
@@ -199,17 +222,17 @@ Black UI uses CSS variables for theming, making it easy to customize:
 }
 ```
 
-## 📊 Component Showcase
+<!-- ## 📊 Component Showcase -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://i.ibb.co/QnNX6j7/blackui-component-showcase.png" alt="Component Showcase" width="100%" />
-</p>
+</p> -->
 
 ## 📖 Documentation
 
 For comprehensive documentation including all components, props, and examples:
 
-[**View Documentation**](https://blackui.com/docs)
+[**View Documentation**](https://blackui.com/components?component=Introduction)
 
 ## 🛣️ Roadmap
 
@@ -228,7 +251,7 @@ We welcome contributions to Black UI! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-Please read our [Contributing Guidelines](https://blackui.com/contributing) for more details.
+<!-- Please read our [Contributing Guidelines](https://blackui.com/contributing) for more details. -->
 
 ## 📋 Changelog
 
@@ -242,7 +265,7 @@ Please read our [Contributing Guidelines](https://blackui.com/contributing) for 
 
 ## 📄 License
 
-Black UI is licensed under the [MIT License](https://github.com/blackui/blackui/blob/main/LICENSE).
+Black UI is licensed under the [MIT License](https://github.com/codewithMUHILAN/black-ui/blob/main/README.md).
 
 ---
 
@@ -251,8 +274,8 @@ Black UI is licensed under the [MIT License](https://github.com/blackui/blackui/
     <sub>Designed and built with ❤️ by the MuhilanOrg</sub>
   </p>
   <p>
-    <a href="https://twitter.com/black_ui">
-      <img src="https://img.shields.io/twitter/follow/black_ui?style=social" alt="Twitter" />
-    </a>
+<a href="https://instagram.com/codewith_muhilan/" target="_blank">
+  <img src="https://img.shields.io/badge/Follow-@codewith_muhilan-blue?style=social&logo=instagram" alt="Instagram Follow" />
+</a>
   </p>
 </div>
