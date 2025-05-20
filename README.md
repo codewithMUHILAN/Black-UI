@@ -89,72 +89,72 @@ export default function App() {
 Black UI includes a comprehensive set of components:
 
 ### Layout & Structure
-- **Accordion** — Collapsible content panels
--**Seasonal Hover Cards**-
--**Interactive Card Gallery**-
--**Aurora Text**-
--**Confetti Button**-
--**Smokey Cursor**-
--**Scroll Timeline**-
--**Interactive Gradient Card**-
--**Dynamic Navigation**-
--**Gradient Button**-
--**Count Up**-
--**Password Strength Indicator**-
--**Border Beam**-
--**Animated Background**-
--**Alert**-
--**Alert Dialog**-
--**Avatar**-
--**Badge**-
--**Button**-
--**Card**-
--**Carousel**-
--**Chart**-
--**Collapsible**-
--**Confetti Button**-
--**Context Menu**-
--**Dialog**-
--**Drawer**-
--**Dropdown Menu**-
--**Hover Card**-
--**Popover**-
--**Progress**-
--**Sheet**-
--**Skeleton**-
--**Table**-
--**Toast**-
--**Tooltip**-
--**Top Loader**-
--**Form Controls**-
--**Calendar**-
--**Checkbox**-
--**Command**-
--**Form**-
--**Input**-
--**Input OTP**-
--**Label**-
--**Radio Group**-
--**Select**-
--**Slider**-
--**Switch**-
--**Textarea**-
--**Toggle**-
--**Toggle Group**-
--**Accordion**-
--**Aspect Ratio**-
--**Resizable**-
--**Resizable**-
--**Scroll Area**-
--**Separator**-
--**Tabs**-
--**Breadcrumb**-
--**Command**-
--**Dock**-
--**Menubar**-
--**Navigation Menu**-
--**Pagination**-
--**Sidebar**-
+ **Accordion** 
+**Seasonal Hover Cards**
+**Interactive Card Gallery**
+**Aurora Text**
+**Confetti Button**
+**Smokey Cursor**
+**Scroll Timeline**
+**Interactive Gradient Card**
+**Dynamic Navigation**
+**Gradient Button**
+**Count Up**
+**Password Strength Indicator**
+**Border Beam**
+**Animated Background**
+**Alert**
+**Alert Dialog**
+**Avatar**
+**Badge**
+**Button**
+**Card**
+**Carousel**
+**Chart**
+**Collapsible**
+**Confetti Button**
+**Context Menu**
+**Dialog**
+**Drawer**
+**Dropdown Menu**
+**Hover Card**
+**Popover**
+**Progress**
+**Sheet**
+**Skeleton**
+**Table**
+**Toast**
+**Tooltip**
+**Top Loader**
+**Form Controls**
+**Calendar**
+**Checkbox**
+**Command**
+**Form**
+**Input**
+**Input OTP**
+**Label**
+**Radio Group**
+**Select**
+**Slider**
+**Switch**
+**Textarea**
+**Toggle**
+**Toggle Group**
+**Accordion**
+**Aspect Ratio**
+**Resizable**
+**Resizable**
+**Scroll Area**
+**Separator**
+**Tabs**
+**Breadcrumb**
+**Command**
+**Dock**
+**Menubar**
+**Navigation Menu**
+**Pagination**
+**Sidebar**
 
 ## 🎭 Advanced Animations
 
