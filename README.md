@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="http://codewithmuhilan.com/extra-Assets/blackuilogo.png" alt="Black UI Logo" width="180" />
+  <img src="https://codewithmuhilan.com/Extra-Assets/blackuilogo.png" alt="Black UI Logo" width="180" />
   
   <h1 align="center">Black UI</h1>
   
@@ -88,7 +88,7 @@ export default function App() {
 
 Black UI includes a comprehensive set of components:
 
-### Layout & Structure
+### Our Components List
  **Accordion** 
 **Seasonal Hover Cards**
 **Interactive Card Gallery**
