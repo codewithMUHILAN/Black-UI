@@ -1,0 +1,25 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --primarybackground: #000; /* white for light mode */
+  }
+
+  .dark {
+    --primarybackground: #fff; /* black for dark mode */
+  }
+}
+
+@layer utilities {
+  /* Utility to use the background color variable */
+  .bg-background {
+    background-color: var(--primarybackground);
+  }
+
+  /* Optional: Foreground text colors using variables if needed */
+  .text-foreground {
+    color: var(--primarybackground);
+  }
+}

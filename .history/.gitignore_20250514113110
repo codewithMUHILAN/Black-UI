@@ -1,0 +1,16 @@
+# Ignore everything
+*
+
+# Allow only specific files and directories
+!README.md
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsup.config.json
+
+# Allow these folders and their contents
+!dist/
+!dist/**
+
+!scripts/
+!scripts/**

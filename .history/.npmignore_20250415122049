@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except these files and folders
+!dist/
+!README.md
+!package.json
+!package-lock.json

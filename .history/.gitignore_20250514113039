@@ -1,0 +1,12 @@
+# Ignore everything
+*
+/src
+
+# Except these files and folders
+!dist/
+!scripts/
+!README.md
+!package.json
+!package-lock.json
+!tsconfig.json
+!tsup.config.json
