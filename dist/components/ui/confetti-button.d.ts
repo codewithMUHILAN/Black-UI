@@ -24,7 +24,7 @@ declare global {
     }
 }
 declare const confettiButtonVariants: (props?: ({
-    variant?: "default" | "link" | "secondary" | "outline" | "ghost" | "gradient" | null | undefined;
+    variant?: "link" | "default" | "outline" | "secondary" | "ghost" | "gradient" | null | undefined;
     size?: "icon" | "default" | "sm" | "lg" | "xl" | "pill" | null | undefined;
     animation?: "expand" | "none" | "scale" | "pulse" | "bounce" | "shake" | "glow" | null | undefined;
 } & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;

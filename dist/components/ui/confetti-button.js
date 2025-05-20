@@ -3,6 +3,7 @@ import React, { useEffect, useState, useRef } from "react";
 import { cn } from "../lib/utils";
 import { Loader2 } from "lucide-react";
 import { cva } from "class-variance-authority";
+// Variants for button styling
 const confettiButtonVariants = cva("inline-flex items-center justify-center gap-2 font-medium transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none", {
     variants: {
         variant: {
@@ -43,25 +44,27 @@ const ConfettiButton = React.forwardRef(({ className, variant, size, animation, 
 }, autoConfetti = false, triggerOnHover = false, ...props }, ref) => {
     const [scriptLoaded, setScriptLoaded] = useState(false);
     const buttonRef = useRef(null);
+    // Load confetti script dynamically
     useEffect(() => {
-        // Dynamically load the confetti script if not already loaded
         if (!window.confetti) {
             const script = document.createElement("script");
             script.src =
-                "https://cdn.jsdelivr.net/npm/canvas-confetti..1.4.0/dist/confetti.browser.min.js";
+                "https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js";
             script.async = true;
-            script.onload = () => {
-                setScriptLoaded(true);
-            };
+            script.onload = () => setScriptLoaded(true);
             document.body.appendChild(script);
             return () => {
-                document.body.removeChild(script);
+                // Remove only if still present in DOM
+                if (script.parentNode) {
+                    script.parentNode.removeChild(script);
+                }
             };
         }
         else {
             setScriptLoaded(true);
         }
     }, []);
+    // Auto-trigger confetti if needed
     useEffect(() => {
         if (scriptLoaded && autoConfetti && window.confetti && buttonRef.current) {
             const rect = buttonRef.current.getBoundingClientRect();
@@ -69,35 +72,31 @@ const ConfettiButton = React.forwardRef(({ className, variant, size, animation, 
             const y = (rect.top + rect.height / 2) / window.innerHeight;
             window.confetti({
                 ...confettiOptions,
-                origin: { x, y }
+                origin: { x, y },
             });
         }
     }, [scriptLoaded, autoConfetti, confettiOptions]);
-    const triggerConfetti = (e) => {
+    const triggerConfetti = () => {
         if (window.confetti && buttonRef.current) {
             const rect = buttonRef.current.getBoundingClientRect();
             const x = (rect.left + rect.width / 2) / window.innerWidth;
             const y = (rect.top + rect.height / 2) / window.innerHeight;
             window.confetti({
                 ...confettiOptions,
-                origin: { x, y }
+                origin: { x, y },
             });
         }
     };
     return (_jsxs("button", { ref: (node) => {
-            // Merge refs
-            if (typeof ref === 'function') {
+            if (typeof ref === "function")
                 ref(node);
-            }
-            else if (ref) {
+            else if (ref)
                 ref.current = node;
-            }
-            // Safe assignment to mutable ref
             buttonRef.current = node;
         }, className: cn(confettiButtonVariants({ variant, size, animation }), className), onClick: (e) => {
-            triggerConfetti(e);
+            triggerConfetti();
             props.onClick?.(e);
-        }, onMouseEnter: triggerOnHover ? (e) => triggerConfetti(e) : undefined, disabled: loading || props.disabled, ...props, children: [loading ? (_jsx(Loader2, { className: "h-4 w-4 mr-2 animate-spin" })) : icon && iconPosition === "left" ? (_jsx("span", { className: "mr-1", children: icon })) : null, children, icon && iconPosition === "right" && !loading ? (_jsx("span", { className: "ml-1", children: icon })) : null] }));
+        }, onMouseEnter: triggerOnHover ? () => triggerConfetti() : undefined, disabled: loading || props.disabled, ...props, children: [loading && _jsx(Loader2, { className: "h-4 w-4 mr-2 animate-spin" }), !loading && icon && iconPosition === "left" && (_jsx("span", { className: "mr-1", children: icon })), children, !loading && icon && iconPosition === "right" && (_jsx("span", { className: "ml-1", children: icon }))] }));
 });
 ConfettiButton.displayName = "ConfettiButton";
 export { ConfettiButton, confettiButtonVariants };

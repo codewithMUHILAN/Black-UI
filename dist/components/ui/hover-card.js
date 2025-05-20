@@ -47,7 +47,7 @@ const HoverCard = ({ children, defaultOpen = false, open: controlledOpen, onOpen
                 clearTimeout(closeTimerRef.current);
         };
     }, []);
-    return (_jsx(HoverCardContext.Provider, { value: { open, setOpen }, children: _jsx("div", { onMouseEnter: handleOpen, onMouseLeave: handleClose, onFocus: handleOpen, onBlur: handleClose, children: children }) }));
+    return (_jsx(HoverCardContext.Provider, { value: { open, setOpen }, children: _jsx("div", { className: "relative inline-block", onMouseEnter: handleOpen, onMouseLeave: handleClose, onFocus: handleOpen, onBlur: handleClose, children: children }) }));
 };
 const HoverCardTrigger = ({ children, asChild = false }) => {
     if (asChild) {
@@ -63,13 +63,15 @@ const HoverCardContent = React.forwardRef(({ className, align = "center", sideOf
     const { open } = context;
     if (!open)
         return null;
-    return (_jsx("div", { ref: ref, className: cn("z-50 w-64 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2", className), style: {
-            position: "absolute",
+    return (_jsx("div", { ref: ref, className: cn(`absolute z-50 w-64 rounded-md border bg-white 
+          p-4 text-black shadow-md 
+          transition-all duration-200 ease-in-out`, className), style: {
+            top: `calc(100% + ${sideOffset}px)`,
             left: align === "center" ? "50%" : align === "start" ? "0" : "auto",
             right: align === "end" ? "0" : "auto",
             transform: align === "center" ? "translateX(-50%)" : "none",
-            top: `calc(100% + ${sideOffset}px)`,
         }, ...props }));
 });
 HoverCardContent.displayName = "HoverCardContent";
+// Exports
 export { HoverCard, HoverCardTrigger, HoverCardContent };

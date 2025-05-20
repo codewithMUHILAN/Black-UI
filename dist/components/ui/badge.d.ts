@@ -1,9 +1,9 @@
 import * as React from "react";
 import { type VariantProps } from "class-variance-authority";
 declare const badgeVariants: (props?: ({
-    variant?: "default" | "destructive" | "success" | "warning" | "info" | "secondary" | "outline" | null | undefined;
+    variant?: "default" | "destructive" | "success" | "warning" | "info" | "outline" | "secondary" | null | undefined;
     size?: "default" | "sm" | "lg" | null | undefined;
-    shape?: "default" | "rounded" | "square" | null | undefined;
+    shape?: "default" | "square" | "rounded" | null | undefined;
 } & import("class-variance-authority/dist/types").ClassProp) | undefined) => string;
 export interface BadgeProps extends React.HTMLAttributes<HTMLDivElement>, VariantProps<typeof badgeVariants> {
     withDot?: boolean;

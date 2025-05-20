@@ -1,5 +1,5 @@
-<!-- <div align="center">
-  <img src="https://i.ibb.co/jJKqgQC/black-ui-logo-dark.png" alt="Black UI Logo" width="180" />
+<div align="center">
+  <img src="https://i.ibb.co/jJKqgQC/blackui-logo-dark.png" alt="Black UI Logo" width="180" />
   
   <h1 align="center">Black UI</h1>
   
@@ -8,23 +8,23 @@
   </p>
   
   <p align="center">
-    <a href="https://github.com/black-ui/black-ui/stargazers">
-      <img src="https://img.shields.io/github/stars/black-ui/black-ui?style=flat-square&labelColor=000000&color=4d4d4d" alt="GitHub Stars" />
+    <a href="https://github.com/blackui/blackui/stargazers">
+      <img src="https://img.shields.io/github/stars/blackui/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="GitHub Stars" />
     </a>
-    <a href="https://www.npmjs.com/package/black-ui">
-      <img src="https://img.shields.io/npm/v/black-ui?style=flat-square&labelColor=000000&color=4d4d4d" alt="NPM Version" />
+    <a href="https://www.npmjs.com/package/blackui">
+      <img src="https://img.shields.io/npm/v/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="NPM Version" />
     </a>
-    <a href="https://github.com/black-ui/black-ui/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/black-ui/black-ui?style=flat-square&labelColor=000000&color=4d4d4d" alt="License" />
+    <a href="https://github.com/blackui/blackui/blob/main/LICENSE">
+      <img src="https://img.shields.io/github/license/blackui/blackui?style=flat-square&labelColor=000000&color=4d4d4d" alt="License" />
     </a>
-    <a href="https://black-ui.com/discord">
+    <a href="https://blackui.com/discord">
       <img src="https://img.shields.io/discord/1234567890?style=flat-square&labelColor=000000&color=4d4d4d&label=discord" alt="Discord" />
     </a>
   </p>
   
   <br />
   <p align="center">
-    <img src="https://i.ibb.co/CtFSK18/black-ui-components-display.png" alt="Black UI Components" width="90%" />
+    <img src="https://i.ibb.co/CtFSK18/blackui-components-display.png" alt="Black UI Components" width="90%" />
   </p>
 </div>
 
@@ -34,13 +34,13 @@
 
 ```bash
 # Using npm
-npm install black-ui
+npm install blackui
 
 # Using yarn
-yarn add black-ui
+yarn add blackui
 
 # Using pnpm
-pnpm add black-ui
+pnpm add blackui
 ```
 
 ## 🔧 Requirements
@@ -53,7 +53,7 @@ pnpm add black-ui
 
 ```jsx
 import React from 'react';
-import { Button, Card } from 'black-ui';
+import { Button, Card } from 'blackui';
 
 export default function App() {
   return (
@@ -138,7 +138,7 @@ Black UI includes a comprehensive set of components:
 Black UI incorporates sophisticated animation systems:
 
 ```jsx
-import { InteractiveGradient } from 'black-ui';
+import { InteractiveGradient } from 'blackui';
 
 function GradientDemo() {
   return (
@@ -202,14 +202,14 @@ Black UI uses CSS variables for theming, making it easy to customize:
 ## 📊 Component Showcase
 
 <p align="center">
-  <img src="https://i.ibb.co/QnNX6j7/black-ui-component-showcase.png" alt="Component Showcase" width="100%" />
+  <img src="https://i.ibb.co/QnNX6j7/blackui-component-showcase.png" alt="Component Showcase" width="100%" />
 </p>
 
 ## 📖 Documentation
 
 For comprehensive documentation including all components, props, and examples:
 
-[**View Documentation**](https://black-ui.com/docs)
+[**View Documentation**](https://blackui.com/docs)
 
 ## 🛣️ Roadmap
 
@@ -228,7 +228,7 @@ We welcome contributions to Black UI! Here's how you can help:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-Please read our [Contributing Guidelines](https://black-ui.com/contributing) for more details.
+Please read our [Contributing Guidelines](https://blackui.com/contributing) for more details.
 
 ## 📋 Changelog
 
@@ -242,7 +242,7 @@ Please read our [Contributing Guidelines](https://black-ui.com/contributing) for
 
 ## 📄 License
 
-Black UI is licensed under the [MIT License](https://github.com/black-ui/black-ui/blob/main/LICENSE).
+Black UI is licensed under the [MIT License](https://github.com/blackui/blackui/blob/main/LICENSE).
 
 ---
 
@@ -255,4 +255,4 @@ Black UI is licensed under the [MIT License](https://github.com/black-ui/black-u
       <img src="https://img.shields.io/twitter/follow/black_ui?style=social" alt="Twitter" />
     </a>
   </p>
-</div> -->
+</div>
